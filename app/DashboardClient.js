@@ -125,6 +125,7 @@ export default function DashboardClient({ initialLinks }) {
                 <th className="py-1">Code</th>
                 <th className="py-1">URL</th>
                 <th className="py-1">Clicks</th>
+        
                 <th className="py-1">Last Clicked</th>
                 <th className="py-1">Actions</th>
               </tr>
@@ -132,7 +133,7 @@ export default function DashboardClient({ initialLinks }) {
 
             <tbody>
               {links.map((link) => {
-                const short = `http://localhost:3000/${link.code}`;
+                const short = `https://tinybitly.vercel.app/`${link.code}`;
                 return (
                   <tr key={link.code} className="border-b last:border-0">
                     <td className="py-1 align-top">
