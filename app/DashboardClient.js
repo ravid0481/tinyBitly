@@ -133,7 +133,7 @@ export default function DashboardClient({ initialLinks }) {
 
             <tbody>
               {links.map((link) => {
-                const short = `https://tinybitly.vercel.app/`${link.code}`;
+                const short = `https://tinybitly.vercel.app/${link.code}`;
                 return (
                   <tr key={link.code} className="border-b last:border-0">
                     <td className="py-1 align-top">
